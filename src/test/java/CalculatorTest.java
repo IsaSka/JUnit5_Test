@@ -17,6 +17,12 @@ class CalculatorTest {
         assertEquals(10, calculator.add(5,5), "5 + 5 should equal 10");
     }
 
+    @Test
+    @DisplayName("5 - 4 = 1")
+    void testSubtractingTwoNumbers() {
+        assertEquals(1, calculator.subtract(5,4), "5 - 4 should equal 1");
+    }
+
     @RepeatedTest(3)
     @DisplayName("5 * 5 = 25")
     void testMultiplyingTwoNumbers() {
